@@ -570,24 +570,18 @@ p {
   gap: 40px;
   margin-bottom: 80px;
   opacity: 0;
-  transform: translateY(40px);
-  animation: timelineFade 0.8s forwards;
+  bottom: -30px;
+  transition: .3s ease;
+  transition-delay: .2s;
+}
+
+.timeline-item.show {
+  opacity: 1;
+  bottom: 0px;
 }
 
 .timeline-item:last-child {
   margin-bottom: 0;
-}
-
-.timeline-item:nth-child(1) {
-  animation-delay: 0.1s;
-}
-
-.timeline-item:nth-child(2) {
-  animation-delay: 0.25s;
-}
-
-.timeline-item:nth-child(3) {
-  animation-delay: 0.4s;
 }
 
 .timeline-item::before {
@@ -700,18 +694,6 @@ p {
 
 .timeline-content ul li::marker {
   color: #111;
-}
-
-@keyframes timelineFade {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 1200px) {
