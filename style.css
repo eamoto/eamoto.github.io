@@ -287,7 +287,7 @@ p {
   align-items: center;
   gap: 40px;
   padding: 120px 60px 60px;
-  background-image: url("images/profile4.png");
+  background-image: url("images/profile5.png");
   background-repeat: no-repeat;
   background-size: auto calc(100% - 80px);
   background-position: 100% 100%;
@@ -505,24 +505,21 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 5px;
   text-align: center;
-  font-weight: 600;
-  font-size: 1rem;
-  transition: var(--transition);
+  font-size: .9rem;
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  opacity: 0;
+  transition: .3s ease;
+  transition-delay: 0s;
+  bottom: -20px;
 }
 
-.skill-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #111;
-  transform: translateY(100%);
-  transition: 0.35s ease;
-  z-index: 0;
+.skill-card.show {
+  opacity: 1;
+  bottom: 0px;
 }
 
 .skill-card > * {
@@ -530,117 +527,8 @@ p {
   z-index: 2;
 }
 
-.skill-card i {
-  font-size: 2rem;
-  transition: var(--transition);
-}
-
-.skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow);
-  color: #fff;
-  border-color: #111;
-}
-
-.skill-card:hover::before {
-  transform: translateY(0);
-}
-
-.skill-card:hover i {
-  transform: scale(1.15);
-}
-
-.fa-html5 {
-  color: #e34f26;
-}
-
-.fa-css3-alt {
-  color: #1572b6;
-}
-
-.fa-js {
-  color: #f7df1e;
-}
-
-.fa-react {
-  color: #61dafb;
-}
-
-.fa-node-js {
-  color: #3c873a;
-}
-
-.fa-git-alt {
-  color: #f05032;
-}
-
-.fa-docker {
-  color: #2496ed;
-}
-
-.skill-card:hover i {
-  color: #fff;
-}
-
-.skill-card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: skillFade 0.7s forwards;
-}
-
-.skill-card:nth-child(1) {
-  animation-delay: 0.05s;
-}
-.skill-card:nth-child(2) {
-  animation-delay: 0.1s;
-}
-.skill-card:nth-child(3) {
-  animation-delay: 0.15s;
-}
-.skill-card:nth-child(4) {
-  animation-delay: 0.2s;
-}
-.skill-card:nth-child(5) {
-  animation-delay: 0.25s;
-}
-.skill-card:nth-child(6) {
-  animation-delay: 0.3s;
-}
-.skill-card:nth-child(7) {
-  animation-delay: 0.35s;
-}
-.skill-card:nth-child(8) {
-  animation-delay: 0.4s;
-}
-.skill-card:nth-child(9) {
-  animation-delay: 0.45s;
-}
-.skill-card:nth-child(10) {
-  animation-delay: 0.5s;
-}
-.skill-card:nth-child(11) {
-  animation-delay: 0.55s;
-}
-.skill-card:nth-child(12) {
-  animation-delay: 0.6s;
-}
-.skill-card:nth-child(13) {
-  animation-delay: 0.65s;
-}
-.skill-card:nth-child(14) {
-  animation-delay: 0.7s;
-}
-
-@keyframes skillFade {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.skill-card img {
+  width: 20%;
 }
 
 @media (max-width: 600px) {
