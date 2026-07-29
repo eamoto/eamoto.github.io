@@ -108,6 +108,13 @@ p {
   gap: 22px;
 }
 
+.non-selectable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .btn:hover i {
   transform: translateX(4px);
 }
@@ -507,12 +514,12 @@ p {
   align-items: center;
   gap: 5px;
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   opacity: 0;
-  transition: .3s ease;
+  transition: 0.3s ease;
   transition-delay: 0s;
   bottom: -20px;
 }
@@ -571,8 +578,8 @@ p {
   margin-bottom: 80px;
   opacity: 0;
   bottom: -30px;
-  transition: .3s ease;
-  transition-delay: .2s;
+  transition: 0.3s ease;
+  transition-delay: 0.2s;
 }
 
 .timeline-item.show {
