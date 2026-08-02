@@ -21,7 +21,9 @@
   <body>
     <header class="header non-selectable">
       <div class="logo">
-        <img src="images/logo.png" />
+        <a href="#about">
+          <img src="images/logo.png" />
+        </a>
       </div>
       <nav class="navbar">
         <a href="#about">About</a>
@@ -178,7 +180,7 @@
           <div class="timeline-year">2016 - 2024</div>
           <div class="timeline-content">
             <h3>
-              Jumpercom 
+              Jumpercom
               <span> Senior Software Developer </span>
             </h3>
             <p>
@@ -255,12 +257,83 @@
 
         <h2>Things I've Built</h2>
         <p>
-          From AI-powered applications to scalable web platforms, here are some
-          of the projects I've designed, developed, and delivered.
+          Some demos are inspired by real AI projects I've built. Since the
+          originals are confidential, I've recreated them to showcase my work.
         </p>
       </div>
       <div>
-        Coming Soon
+        <div class="project-card project-card-shortened">
+          <div class="project-card-head">
+            <a href="https://eamoto.site.je/scheduler-01/" target="_blank">
+              <img src="images/projects/scheduler-01.png" />
+            </a>
+          </div>
+          <div class="project-card-body">
+            <h3>AI Appointment Scheduler</h3>
+            <div class="project-card-body-read-more non-selectable">
+              <span class="more">Read More &raquo;</span
+              ><span class="less">&laquo; Read Less</span>
+            </div>
+            <div class="project-card-body-description">
+              <p>
+                An AI-powered scheduling assistant that uses OpenAI to manage
+                appointments through natural conversation. Users can book,
+                modify, reschedule, and cancel appointments without navigating
+                traditional forms, providing a seamless and intuitive scheduling
+                experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card project-card-shortened">
+          <div class="project-card-head">
+            <a href="https://eamoto.site.je/ai-stt-tts/" target="_blank">
+              <img src="images/projects/ai-stt-tts.png" />
+            </a>
+          </div>
+          <div class="project-card-body">
+            <h3>AI Voice Ordering Assistant</h3>
+            <div class="project-card-body-read-more non-selectable">
+              <span class="more">Read More &raquo;</span
+              ><span class="less">&laquo; Read Less</span>
+            </div>
+            <div class="project-card-body-description">
+              <p>
+                An AI-powered voice ordering assistant that enables users to
+                place orders through natural conversation. The application uses
+                the browser's native Speech-to-Text (STT) for voice input,
+                OpenAI Text-to-Speech (TTS) for natural voice responses, and
+                prompt engineering to guide the AI in understanding customer
+                intent, confirming orders, and delivering a smooth,
+                conversational ordering experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="project-card project-card-shortened">
+          <div class="project-card-head">
+            <a href="https://eamoto.site.je/rag-hogwarts/" target="_blank">
+              <img src="images/projects/rag-hogwarts.png" />
+            </a>
+          </div>
+          <div class="project-card-body">
+            <h3>Hogwarts Policy Assistant</h3>
+            <div class="project-card-body-read-more non-selectable">
+              <span class="more">Read More &raquo;</span
+              ><span class="less">&laquo; Read Less</span>
+            </div>
+            <div class="project-card-body-description">
+              <p>
+                An AI-powered assistant that answers questions about Hogwarts
+                policies using Retrieval-Augmented Generation (RAG). It combines
+                OpenAI's language models with Pinecone vector search to retrieve
+                relevant policy documents and generate accurate, context-aware
+                responses, helping users quickly find school rules and
+                guidelines.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="contact-section" id="contact">
@@ -283,5 +356,19 @@
       <p>&nbsp;</p>
     </footer>
     <script src="script.js?v=6"></script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HM8SH499ZD"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HM8SH499ZD");
+    </script>
   </body>
 </html>
