@@ -35,7 +35,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="style.css?v=8" />
+    <link rel="stylesheet" href="style.css?v=9" />
   </head>
   <body>
     <header class="header non-selectable">
@@ -279,6 +279,10 @@
           Some demos are inspired by real AI projects I've built. Since the
           originals are confidential, I've recreated them to showcase my work.
         </p>
+        <p>
+          Feel free to play around with them—they're demo versions and are not
+          connected to live systems.
+        </p>
       </div>
       <div>
         <div class="project-card project-card-shortened">
@@ -306,7 +310,10 @@
         </div>
         <div class="project-card project-card-shortened">
           <div class="project-card-head">
-            <a href="https://www.facebook.com/messages/t/1263720846819910" target="_blank">
+            <a
+              href="https://www.facebook.com/messages/t/1263720846819910"
+              target="_blank"
+            >
               <img src="images/projects/facebook-messenger-01.png" />
             </a>
           </div>
@@ -403,8 +410,19 @@
     <footer class="footer">
       <p>&nbsp;</p>
     </footer>
-    <script src="script.js?v=8"></script>
-    <!-- Google tag (gtag.js) -->
+    <div class="ai-button chat-avatar-b"></div>
+    <div class="ai-speech non-selectable" id="ai-bubble">
+      <span class="ai-text" id="ai-text"></span>
+      <span class="cursor"></span>
+    </div>
+    <div class="ai-chat">
+      <iframe
+        src=""
+        class="ai-chat-frame"
+        title="AI Chatbot"
+      ></iframe>
+    </div>
+    <script src="script.js?v=9"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-HM8SH499ZD"
